@@ -1,4 +1,4 @@
-<!-- not currently working -- making every new creature entry doubled
+ not currently working -- making every new creature entry doubled
 
 <h1>Use this form to edit an existing creature:</h1>
 
@@ -7,12 +7,9 @@
 		<input type="text" name="creatures[name]" value="<%= @creature.name %>">
 		<input type="text" name="creatures[kind]" value="<%= @creature.kind %>">
 		<textarea name="creature[description]" value="<%= @creature.description %>"></textarea>
-		<% token_tag form_authenticity_token %>
+		<%= token_tag form_authenticity_token %>
 
 		<button> Update Creature </button>
 </form>
 
 <img src="http://thesecondtake.com/wp-content/uploads/2013/06/the-roto-scopes.png"/>
-
-
--->

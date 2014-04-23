@@ -31,8 +31,8 @@ class CreaturesController < ApplicationController
 		creature_id = params[:id]
 		creature = Creature.find(creature_id)
 		updated_attributes = params.require(:creature).permit(:name, :kind, :description)
-		creature.update_attributes(updated_attributes)
-		redirect_to "/posts/#{creature_id}"
+		Creature.update(creature, updated_attributes)
+		redirect_to "/creatures/#{creature_id}"
 	end
 
 

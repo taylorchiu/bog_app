@@ -1,12 +1,15 @@
-<h1>Confirmed! You added the following creature:</h1>
+<h1>You added the following creature:</h1>
 
 <div>
-	Name: <%= @creature.name %> <br>
-	Kind: <%= @creature.kind %> <br>
-	Description: <%= @creature.description %> <br>
-
+<p>
+	<strong>Name: </strong><%= @creature.name %> <br>
+	<strong>Kind: </strong><%= @creature.kind %> <br>
+	<strong>Description: </strong><%= @creature.description %> <br>
 </div>
+</p>
 
+<p>
 <a href="/">Main Menu</a> <br>
 <br>
 <a href="/creatures/new">Add another creature</a>
+</p>

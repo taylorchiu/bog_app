@@ -34,5 +34,13 @@ p {
 .list {
 	margin: 20px;
 	text-align: left;
+}
+
+input {
+	border-radius: 10px;
+}
+
+textarea {
+	border-radius: 10px;
 
 }
