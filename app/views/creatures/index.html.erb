@@ -1,11 +1,21 @@
+<div class="image">
+	<img src="http://www.paperdroids.com/wp-content/uploads/2013/07/MonstersUniversity3.jpg"/>
+</div>
+
 <h1> Hot bogs! Here are your creatures:</h1>
+<h2><a href="/creatures/new">Add a new creature</a></h2>
 
+	<div class="list">
 <% @creatures.each do |creature| %>
-
-	<div>
-		Name: <%= creature[:name] %> <br>
-		Kind: <%= creature[:kind] %> <br>
-		Description: <%= creature[:description] %>
-	</div>
-
+	<p>
+		<strong>Name:</strong> <%= creature[:name] %> <br>
+		<strong>Kind:</strong> <%= creature[:kind] %> <br>
+		<strong>Description:</strong> <%= creature[:description] %> <br>
+		<strong><a href="/creatures/<%= creature[:id]%>">More info on <%=creature[:name] %></a></strong>
+	</p>
 <% end %>
+	</div class="list">
+
+
+<br>
+
