@@ -1,0 +1,11 @@
+<h1> Hot bogs! Here are your creatures:</h1>
+
+<% @creatures.each do |creature| %>
+
+	<div>
+		Name: <%= creature[:name] %> <br>
+		Kind: <%= creature[:kind] %> <br>
+		Description: <%= creature[:description] %>
+	</div>
+
+<% end %>

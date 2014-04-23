@@ -1,0 +1,10 @@
+<h1>Use this form to edit an existing creature:</h1>
+
+<form action="/creatures" method="post">
+		<input type="text" name="creatures[name]" placeholder="Creature name">
+		<input type="text" name="creatures[kind]" placeholder="Kind/Type?">
+		<textarea name="creature[description]" placeholder="Describe the creature..."></textarea>
+		<% token_tag form_authenticity_token %>
+
+		<button> Save Creature </button>
+</form>

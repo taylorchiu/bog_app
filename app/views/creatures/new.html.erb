@@ -1,0 +1,15 @@
+
+<h1>Fill out this form to add a creature to the bog:</h1>
+
+<form action="/creatures" method="post">
+		<input type="text" name="creature[name]" placeholder="Creature Name">
+		<input type="text" name="creature[kind]" placeholder="Type of Creature">
+		<textarea name="creature[description]" placeholder="Describe creature..."></textarea>
+		<%= token_tag form_authenticity_token %>
+
+		<button> Save Creature </button>
+</form>
+
+<br></br>
+
+<img src="http://25.media.tumblr.com/tumblr_m5dfu9JzFX1rpl3bro1_500.gif"/>
